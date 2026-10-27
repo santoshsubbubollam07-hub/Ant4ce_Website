@@ -22,6 +22,9 @@
     tailwind.config = {
       theme: {
         extend: {
+          screens: {
+            lg: '960px'
+          },
           colors: {
             slate: { 950: '#0F172A' },
             mint: {
@@ -87,12 +90,12 @@
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Main navigation">
       <a href="#home" class="flex items-center gap-3 focus-ring" aria-label="ANT4CE home">
         <img src="assets/branding/Ant4ce_Logo.jpeg" alt="ANT4CE logo" class="h-11 w-11 rounded-xl object-cover">
-        <span class="leading-tight"><span class="block font-display text-lg font-extrabold tracking-tight text-slate-950">ANT <span class="text-red-600">4</span>CE</span><span class="hidden text-[10px] font-bold uppercase tracking-[.12em] text-slate-500 sm:block">Constructions & Solar Services</span></span>
+        <span class="leading-tight"><span class="block font-display text-lg font-extrabold tracking-tight text-slate-950">ANT <span class="text-red-600">4</span>CE</span><span class="hidden text-[10px] font-bold uppercase tracking-[.12em] text-slate-500 xl:block">Constructions & Solar Services</span></span>
       </a>
-      <div class="hidden items-center gap-7 text-sm font-semibold text-slate-600 lg:flex">
-        <a class="hover:text-ember" href="#services">Services</a><a class="hover:text-ember" href="#partners">Partners</a><a class="hover:text-ember" href="#calculator">Solar calculator</a><a class="hover:text-ember" href="#resources">Resources</a><a class="hover:text-ember" href="#contact">Contact</a>
+      <div class="hidden items-center gap-4 text-sm font-semibold text-slate-600 lg:flex xl:gap-7">
+        <a class="whitespace-nowrap hover:text-ember" href="#services">Services</a><a class="whitespace-nowrap hover:text-ember" href="#partners">Partners</a><a class="whitespace-nowrap hover:text-ember" href="#calculator">Solar calculator</a><a class="whitespace-nowrap hover:text-ember" href="#resources">Resources</a><a class="whitespace-nowrap hover:text-ember" href="#contact">Contact</a>
       </div>
-      <a href="#contact" class="hidden rounded-full bg-ember px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-orange-900/15 transition hover:bg-orange-700 lg:inline-flex">Get a free consultation <i class="fa-solid fa-arrow-up-right-from-square ml-2 mt-0.5 text-xs"></i></a>
+      <a href="#contact" class="hidden whitespace-nowrap rounded-full bg-ember px-3 py-2.5 text-sm font-bold text-white shadow-md shadow-orange-900/15 transition hover:bg-orange-700 lg:inline-flex xl:px-5">Get a free consultation <i class="fa-solid fa-arrow-up-right-from-square ml-2 mt-0.5 text-xs"></i></a>
       <button @click="menuOpen=!menuOpen" class="focus-ring rounded-lg p-2 text-slate-800 lg:hidden" aria-label="Toggle navigation" :aria-expanded="menuOpen"><i class="fa-solid" :class="menuOpen ? 'fa-xmark' : 'fa-bars'"></i></button>
     </nav>
     <div x-cloak x-show="menuOpen" x-transition class="border-t border-slate-100 bg-white px-4 pb-4 lg:hidden">
@@ -105,18 +108,18 @@
   <main>
     <section id="home" class="hero-grid relative overflow-hidden text-slate-950">
       <div class="absolute -right-28 top-16 h-96 w-96 rounded-full bg-solar/10 blur-3xl"></div>
-      <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 sm:py-24 min-[900px]:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-28">
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-28">
         <div>
           <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-950/15 bg-white/45 px-4 py-2 text-xs font-bold uppercase tracking-[.14em] text-emerald-950"><span class="h-2 w-2 rounded-full bg-ember"></span>Build better. Power brighter.</div>
-          <h1 class="max-w-3xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">A stronger home.<br><span class="text-emerald-900">A brighter future.</span></h1>
+          <h1 class="max-w-3xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-5xl xl:text-6xl">A stronger home.<br><span class="text-emerald-900">A brighter future.</span></h1>
           <p class="mt-6 max-w-xl text-lg leading-8 text-slate-700">Thoughtful construction and dependable rooftop solar, delivered by one experienced local team across Andhra Pradesh.</p>
           <div class="mt-8 grid max-w-xl grid-cols-2 gap-3">
-            <div class="rounded-2xl border border-emerald-950/10 bg-white/55 p-4 sm:p-5"><i class="fa-solid fa-indian-rupee-sign text-emerald-800"></i><p class="mt-2 text-2xl font-extrabold sm:text-3xl">Up to ₹78,000</p><p class="mt-1 text-xs leading-5 text-slate-700 sm:text-sm">Central subsidy under PM Surya Ghar*</p></div>
-            <div class="rounded-2xl border border-emerald-950/10 bg-white/55 p-4 sm:p-5"><i class="fa-solid fa-bolt text-emerald-800"></i><p class="mt-2 text-2xl font-extrabold sm:text-3xl">Up to 90%</p><p class="mt-1 text-xs leading-5 text-slate-700 sm:text-sm">Potential electricity bill savings*</p></div>
+            <div class="rounded-2xl border border-emerald-950/10 bg-white/55 p-4 sm:p-5"><i class="fa-solid fa-indian-rupee-sign text-emerald-800"></i><p class="mt-2 text-2xl font-extrabold sm:text-3xl lg:text-2xl xl:text-3xl">Up to ₹78,000</p><p class="mt-1 text-xs leading-5 text-slate-700 sm:text-sm">Central subsidy under PM Surya Ghar*</p></div>
+            <div class="rounded-2xl border border-emerald-950/10 bg-white/55 p-4 sm:p-5"><i class="fa-solid fa-bolt text-emerald-800"></i><p class="mt-2 text-2xl font-extrabold sm:text-3xl lg:text-2xl xl:text-3xl">Up to 90%</p><p class="mt-1 text-xs leading-5 text-slate-700 sm:text-sm">Potential electricity bill savings*</p></div>
           </div>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="#calculator" class="focus-ring inline-flex items-center justify-center rounded-full bg-solar px-6 py-3.5 font-bold text-slate-950 transition hover:bg-yellow-300">Estimate my solar savings <i class="fa-solid fa-arrow-right ml-2"></i></a>
-            <a href="#services" class="focus-ring inline-flex items-center justify-center rounded-full border border-emerald-950/30 px-6 py-3.5 font-bold text-emerald-950 transition hover:bg-white/35">Explore our services</a>
+            <a href="#calculator" class="focus-ring inline-flex items-center justify-center rounded-full bg-solar px-6 py-3.5 font-bold text-slate-950 transition hover:bg-yellow-300 lg:gap-1 lg:px-4 lg:text-sm xl:gap-2 xl:px-6 xl:text-base">Estimate my solar savings <i class="fa-solid fa-arrow-right ml-2 lg:ml-0"></i></a>
+            <a href="#services" class="focus-ring inline-flex items-center justify-center rounded-full border border-emerald-950/30 px-6 py-3.5 font-bold text-emerald-950 transition hover:bg-white/35 lg:px-4 lg:text-sm xl:px-6 xl:text-base">Explore our services</a>
           </div>
           <p class="mt-6 text-xs leading-5 text-slate-700">*Subsidy eligibility and amount depend on current scheme rules, system specifications and DISCOM approval. Savings are estimates, not guarantees.</p>
         </div>
@@ -144,7 +147,7 @@
     <section id="services" class="py-20 sm:py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center"><p class="text-sm font-extrabold uppercase tracking-[.18em] text-ember">What we do</p><h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">Six services. One trusted team.</h2><p class="mt-4 leading-7 text-slate-600">From Vaastu-led house planning and land surveys to solar, interiors, real estate and electric mobility, ANT4CE brings practical services together under one roof.</p></div>
-        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <template x-for="service in services" :key="service.title">
             <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft transition hover:-translate-y-1">
               <div class="relative aspect-[1.7/1] overflow-hidden bg-slate-100">
