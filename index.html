@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#75bb9e">
   <meta name="description" content="ANT4CE Constructions & Solar Services — government-approved rooftop solar solutions and turnkey construction across Andhra Pradesh.">
   <script>
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
@@ -24,6 +24,13 @@
         extend: {
           colors: {
             slate: { 950: '#0F172A' },
+            mint: {
+              950: '#75BB9E',
+              900: '#64AC8F',
+              800: '#4C9879',
+              700: '#34785D',
+              600: '#245A46'
+            },
             solar: '#EAB308',
             ember: '#EA580C'
           },
@@ -45,16 +52,23 @@
     body { font-family: 'DM Sans', sans-serif; }
     [x-cloak] { display: none !important; }
     .hero-grid {
-      background-color: #0f172a;
-      background-image: radial-gradient(ellipse at 78% 18%, rgba(234,179,8,.18), transparent 35%),
-        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-      background-size: auto, 44px 44px, 44px 44px;
+      background-color: #75bb9e;
+      background-image: radial-gradient(ellipse at 78% 18%, rgba(234,179,8,.16), transparent 35%),
+        radial-gradient(ellipse at 12% 90%, rgba(255,255,255,.25), transparent 42%),
+        linear-gradient(rgba(18,59,42,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18,59,42,.045) 1px, transparent 1px);
+      background-size: auto, auto, 44px 44px, 44px 44px;
     }
     .ticker-track { animation: ticker 36s linear infinite; }
     .ticker-track:hover { animation-play-state: paused; }
     @keyframes ticker { to { transform: translateX(-50%); } }
     .image-cover { background-size: cover; background-position: center; }
+    .survey-art {
+      background-color: #edf5f1;
+      background-image: linear-gradient(rgba(18, 59, 42, .1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 59, 42, .1) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
     .focus-ring:focus-visible { outline: 3px solid #eab308; outline-offset: 3px; }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
@@ -62,10 +76,10 @@
   </style>
 </head>
 <body class="bg-white text-slate-900 antialiased" x-data="ant4ceSite()">
-  <div class="bg-slate-950 text-white">
+  <div class="bg-mint-950 text-slate-950">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-2 text-center text-xs sm:flex-row sm:text-left">
-      <p class="font-semibold tracking-wide"><i class="fa-solid fa-certificate mr-2 text-solar"></i>Govt. Approved Solar Vendor <span class="text-slate-400">· APCPDCL · APSPDCL · APEPDCL · MNRE</span></p>
-      <a href="tel:8522005508" class="font-semibold text-solar hover:text-white focus-ring">Quick enquiry: +91 85220 05508 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+      <p class="font-semibold tracking-wide"><i class="fa-solid fa-certificate mr-2 text-emerald-900"></i>Govt. Approved Solar Vendor <span class="text-slate-700">· APCPDCL · APSPDCL · APEPDCL · MNRE</span></p>
+      <a href="https://wa.me/918522005508" target="_blank" rel="noopener noreferrer" aria-label="Chat with ANT4CE on WhatsApp at +91 85220 05508" class="inline-flex items-center gap-2 font-semibold text-emerald-950 transition hover:text-ember focus-ring"><i class="fa-brands fa-whatsapp text-lg text-emerald-800" aria-hidden="true"></i><span>Quick enquiry on WhatsApp: +91 85220 05508</span><i class="fa-solid fa-arrow-up-right-from-square text-[10px]" aria-hidden="true"></i></a>
     </div>
   </div>
 
@@ -89,28 +103,28 @@
   </header>
 
   <main>
-    <section id="home" class="hero-grid relative overflow-hidden text-white">
+    <section id="home" class="hero-grid relative overflow-hidden text-slate-950">
       <div class="absolute -right-28 top-16 h-96 w-96 rounded-full bg-solar/10 blur-3xl"></div>
       <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-28">
         <div>
-          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[.14em] text-solar"><span class="h-2 w-2 rounded-full bg-solar"></span>Build better. Power brighter.</div>
-          <h1 class="max-w-3xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">A stronger home.<br><span class="text-solar">A brighter future.</span></h1>
-          <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300">Thoughtful construction and dependable rooftop solar, delivered by one experienced local team across Andhra Pradesh.</p>
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-950/15 bg-white/45 px-4 py-2 text-xs font-bold uppercase tracking-[.14em] text-emerald-950"><span class="h-2 w-2 rounded-full bg-ember"></span>Build better. Power brighter.</div>
+          <h1 class="max-w-3xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">A stronger home.<br><span class="text-emerald-900">A brighter future.</span></h1>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-slate-700">Thoughtful construction and dependable rooftop solar, delivered by one experienced local team across Andhra Pradesh.</p>
           <div class="mt-8 grid max-w-xl grid-cols-2 gap-3">
-            <div class="rounded-2xl border border-white/10 bg-white/[.06] p-4 sm:p-5"><i class="fa-solid fa-indian-rupee-sign text-solar"></i><p class="mt-2 text-2xl font-extrabold sm:text-3xl">Up to ₹78,000</p><p class="mt-1 text-xs leading-5 text-slate-300 sm:text-sm">Central subsidy under PM Surya Ghar*</p></div>
-            <div class="rounded-2xl border border-white/10 bg-white/[.06] p-4 sm:p-5"><i class="fa-solid fa-bolt text-solar"></i><p class="mt-2 text-2xl font-extrabold sm:text-3xl">Up to 90%</p><p class="mt-1 text-xs leading-5 text-slate-300 sm:text-sm">Potential electricity bill savings*</p></div>
+            <div class="rounded-2xl border border-emerald-950/10 bg-white/55 p-4 sm:p-5"><i class="fa-solid fa-indian-rupee-sign text-emerald-800"></i><p class="mt-2 text-2xl font-extrabold sm:text-3xl">Up to ₹78,000</p><p class="mt-1 text-xs leading-5 text-slate-700 sm:text-sm">Central subsidy under PM Surya Ghar*</p></div>
+            <div class="rounded-2xl border border-emerald-950/10 bg-white/55 p-4 sm:p-5"><i class="fa-solid fa-bolt text-emerald-800"></i><p class="mt-2 text-2xl font-extrabold sm:text-3xl">Up to 90%</p><p class="mt-1 text-xs leading-5 text-slate-700 sm:text-sm">Potential electricity bill savings*</p></div>
           </div>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
             <a href="#calculator" class="focus-ring inline-flex items-center justify-center rounded-full bg-solar px-6 py-3.5 font-bold text-slate-950 transition hover:bg-yellow-300">Estimate my solar savings <i class="fa-solid fa-arrow-right ml-2"></i></a>
-            <a href="#services" class="focus-ring inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3.5 font-bold text-white transition hover:bg-white/10">Explore our services</a>
+            <a href="#services" class="focus-ring inline-flex items-center justify-center rounded-full border border-emerald-950/30 px-6 py-3.5 font-bold text-emerald-950 transition hover:bg-white/35">Explore our services</a>
           </div>
-          <p class="mt-6 text-xs leading-5 text-slate-400">*Subsidy eligibility and amount depend on current scheme rules, system specifications and DISCOM approval. Savings are estimates, not guarantees.</p>
+          <p class="mt-6 text-xs leading-5 text-slate-700">*Subsidy eligibility and amount depend on current scheme rules, system specifications and DISCOM approval. Savings are estimates, not guarantees.</p>
         </div>
         <div class="relative mx-auto w-full max-w-lg">
           <div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-solar/20 to-ember/10 blur-2xl"></div>
           <div class="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/5 p-3 shadow-2xl">
             <img src="assets/images/Mounting_Stands/Mounting Structure.jpeg" alt="Solar panel mounting structure installed on a rooftop" class="h-[330px] w-full rounded-[1.5rem] object-cover sm:h-[420px]">
-            <div class="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/20 bg-slate-950/85 p-4 backdrop-blur sm:p-5">
+            <div class="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/20 bg-slate-950/85 p-4 text-white backdrop-blur sm:p-5">
               <div class="flex items-center justify-between gap-3"><div><p class="text-xs font-bold uppercase tracking-widest text-solar">One team. End-to-end.</p><p class="mt-1 font-display text-lg font-bold">From foundation to generation</p></div><span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-solar text-slate-950"><i class="fa-solid fa-sun text-lg"></i></span></div>
             </div>
           </div>
@@ -121,38 +135,52 @@
     <section class="border-b border-slate-100 bg-slate-50">
       <div class="mx-auto grid max-w-7xl grid-cols-2 gap-4 px-4 py-7 text-center sm:grid-cols-4 sm:px-6 lg:px-8">
         <div><p class="font-display text-xl font-extrabold text-slate-950">AP-wide</p><p class="mt-1 text-xs font-medium text-slate-500">Local district teams</p></div>
-        <div><p class="font-display text-xl font-extrabold text-slate-950">25 years</p><p class="mt-1 text-xs font-medium text-slate-500">Solar panel warranty*</p></div>
-        <div><p class="font-display text-xl font-extrabold text-slate-950">5 years</p><p class="mt-1 text-xs font-medium text-slate-500">Inverter warranty*</p></div>
+        <div><p class="font-display text-xl font-extrabold text-slate-950">30 years</p><p class="mt-1 text-xs font-medium text-slate-500">Solar panel warranty*</p></div>
+        <div><p class="font-display text-xl font-extrabold text-slate-950">10 years</p><p class="mt-1 text-xs font-medium text-slate-500">Inverter warranty*</p></div>
         <div><p class="font-display text-xl font-extrabold text-slate-950">Govt. approved</p><p class="mt-1 text-xs font-medium text-slate-500">Solar vendor network</p></div>
       </div>
     </section>
 
     <section id="services" class="py-20 sm:py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center"><p class="text-sm font-extrabold uppercase tracking-[.18em] text-ember">What we do</p><h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">Built around your next big project</h2><p class="mt-4 leading-7 text-slate-600">Whether you are planning a new home or looking to take control of your power bill, we bring the right people and practical expertise to your project.</p></div>
-        <div class="mt-12 grid gap-6 lg:grid-cols-2">
-          <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft transition hover:-translate-y-1">
-            <div class="relative aspect-[1.7/1] overflow-hidden bg-slate-100"><img src="assets/branding/And_4ce Visiting Card.jpeg" alt="ANT4CE Constructions & Solar Services visiting card" class="h-full w-full object-cover object-center"><span class="absolute bottom-5 left-6 rounded-full bg-slate-950/80 px-3 py-1 text-xs font-bold text-white">01 / CONSTRUCTION</span></div>
-            <div class="p-7 sm:p-8"><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-ember"><i class="fa-solid fa-helmet-safety text-xl"></i></div><h3 class="mt-5 font-display text-2xl font-extrabold">Commercial & Residential Construction</h3><p class="mt-3 leading-7 text-slate-600">From concept through handover, keep your project coordinated with reliable workmanship and clear communication.</p><ul class="mt-5 grid gap-3 text-sm font-semibold text-slate-700 sm:grid-cols-2"><li><i class="fa-solid fa-check mr-2 text-ember"></i>Turnkey projects</li><li><i class="fa-solid fa-check mr-2 text-ember"></i>3D elevations</li><li><i class="fa-solid fa-check mr-2 text-ember"></i>Civil supervision</li><li><i class="fa-solid fa-check mr-2 text-ember"></i>Residential & commercial</li></ul><a href="#contact" class="mt-7 inline-flex items-center font-bold text-ember hover:text-orange-800">Discuss your project <i class="fa-solid fa-arrow-right ml-2"></i></a></div>
-          </article>
-          <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft transition hover:-translate-y-1">
-            <div class="relative aspect-[1.7/1] overflow-hidden bg-slate-100"><img src="assets/images/Mounting_Stands/Solar_Panels.jpeg" alt="Rooftop solar panels installation" class="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"><span class="absolute bottom-5 left-6 rounded-full bg-slate-950/80 px-3 py-1 text-xs font-bold text-white">02 / SOLAR</span></div>
-            <div class="p-7 sm:p-8"><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-yellow-50 text-yellow-700"><i class="fa-solid fa-solar-panel text-xl"></i></div><h3 class="mt-5 font-display text-2xl font-extrabold">Rooftop Solar Systems</h3><p class="mt-3 leading-7 text-slate-600">Get a system designed around your property, energy use, utility connection and budget.</p><ul class="mt-5 grid gap-3 text-sm font-semibold text-slate-700 sm:grid-cols-2"><li><i class="fa-solid fa-check mr-2 text-yellow-600"></i>On-grid systems</li><li><i class="fa-solid fa-check mr-2 text-yellow-600"></i>Off-grid systems</li><li><i class="fa-solid fa-check mr-2 text-yellow-600"></i>Hybrid solutions</li><li><i class="fa-solid fa-check mr-2 text-yellow-600"></i>25-year panel warranty*</li></ul><a href="#calculator" class="mt-7 inline-flex items-center font-bold text-ember hover:text-orange-800">Calculate your solar plan <i class="fa-solid fa-arrow-right ml-2"></i></a></div>
-          </article>
+        <div class="mx-auto max-w-2xl text-center"><p class="text-sm font-extrabold uppercase tracking-[.18em] text-ember">What we do</p><h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">Six services. One trusted team.</h2><p class="mt-4 leading-7 text-slate-600">From Vaastu-led house planning and land surveys to solar, interiors, real estate and electric mobility, ANT4CE brings practical services together under one roof.</p></div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <template x-for="service in services" :key="service.title">
+            <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft transition hover:-translate-y-1">
+              <div class="relative aspect-[1.7/1] overflow-hidden bg-slate-100">
+                <template x-if="service.image"><img :src="service.image" :alt="service.imageAlt" loading="lazy" class="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"></template>
+                <template x-if="!service.image"><div class="survey-art flex h-full w-full items-center justify-center"><div class="flex h-24 w-24 items-center justify-center rounded-full border-4 border-white bg-emerald-900 text-4xl text-white shadow-xl"><i class="fa-solid fa-location-crosshairs"></i></div></div></template>
+                <span class="absolute bottom-4 left-5 rounded-full bg-slate-950/85 px-3 py-1 text-xs font-bold text-white" x-text="service.number"></span>
+              </div>
+              <div class="p-6 sm:p-7">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-ember"><i class="text-xl" :class="service.icon"></i></div>
+                <h3 class="mt-5 font-display text-xl font-extrabold text-slate-950" x-text="service.title"></h3>
+                <p class="mt-3 leading-7 text-slate-600" x-text="service.description"></p>
+                <ul class="mt-5 grid gap-3 text-sm font-semibold text-slate-700">
+                  <template x-for="point in service.points" :key="point"><li><i class="fa-solid fa-check mr-2 text-ember"></i><span x-text="point"></span></li></template>
+                </ul>
+                <div class="mt-6 flex flex-wrap items-center gap-3">
+                  <a :href="service.actionHref" class="focus-ring inline-flex items-center rounded-full bg-ember px-4 py-2.5 text-sm font-bold text-white transition hover:bg-orange-700"><span x-text="service.actionLabel"></span><i class="fa-solid fa-arrow-right ml-2"></i></a>
+                  <template x-if="service.secondaryAction"><a :href="service.secondaryAction.href" class="focus-ring inline-flex items-center rounded-full border border-slate-200 px-4 py-2.5 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"><span x-text="service.secondaryAction.label"></span><i class="fa-solid fa-arrow-right ml-2"></i></a></template>
+                  <template x-if="service.samplePlan"><a :href="service.samplePlan" target="_blank" rel="noopener noreferrer" class="focus-ring inline-flex items-center rounded-full border border-slate-200 px-4 py-2.5 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"><i class="fa-solid fa-file-pdf mr-2 text-ember"></i>View sample plan</a></template>
+                </div>
+              </div>
+            </article>
+          </template>
         </div>
         <p class="mt-4 text-center text-xs text-slate-500">*Warranty terms vary by manufacturer and product. Please refer to the applicable product warranty documents.</p>
       </div>
     </section>
 
-    <section id="partners" class="overflow-hidden bg-slate-950 py-16 text-white">
+    <section id="partners" class="overflow-hidden bg-mint-950 py-16 text-slate-950">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:items-center"><div><p class="text-sm font-extrabold uppercase tracking-[.18em] text-solar">Trusted ecosystem</p><h2 class="mt-3 font-display text-3xl font-extrabold">Quality components.<br>Flexible finance.</h2><p class="mt-4 max-w-md leading-7 text-slate-400">We work with leading solar and electrical brands. Ask us about current product availability, offers and financing eligibility.</p></div>
+        <div class="grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:items-center"><div><p class="text-sm font-extrabold uppercase tracking-[.18em] text-emerald-950">Trusted ecosystem</p><h2 class="mt-3 font-display text-3xl font-extrabold">Quality components.<br>Flexible finance.</h2><p class="mt-4 max-w-md leading-7 text-slate-700">We work with leading solar and electrical brands. Ask us about current product availability, offers and financing eligibility.</p></div>
           <div class="space-y-5">
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[.04] py-5"><p class="px-5 text-xs font-bold uppercase tracking-[.15em] text-slate-400">Solar & electrical brands</p><div class="mt-4 flex w-max ticker-track items-center gap-3" aria-label="Partner brands"><template x-for="(item,index) in [...brands,...brands]" :key="index"><span class="rounded-xl border border-white/10 bg-white/[.06] px-5 py-3 text-sm font-extrabold tracking-wide text-white" x-text="item"></span></template></div></div>
-            <div class="overflow-hidden rounded-2xl border border-white/10 bg-white/[.04] py-5"><p class="px-5 text-xs font-bold uppercase tracking-[.15em] text-slate-400">Banking & finance options</p><div class="mt-4 flex w-max ticker-track items-center gap-3" style="animation-direction:reverse" aria-label="Financing institutions"><template x-for="(item,index) in [...banks,...banks]" :key="index"><span class="rounded-xl border border-white/10 bg-white/[.06] px-5 py-3 text-sm font-bold text-slate-200" x-text="item"></span></template></div></div>
+            <div class="overflow-hidden rounded-2xl border border-emerald-950/10 bg-white/55 py-5"><p class="px-5 text-xs font-bold uppercase tracking-[.15em] text-slate-700">Solar & electrical brands</p><div class="mt-4 flex w-max ticker-track items-center gap-3" aria-label="Partner brands"><template x-for="(item,index) in [...brands,...brands]" :key="index"><span class="rounded-xl border border-emerald-950/10 bg-white/75 px-5 py-3 text-sm font-extrabold tracking-wide text-slate-900" x-text="item"></span></template></div></div>
+            <div class="overflow-hidden rounded-2xl border border-emerald-950/10 bg-white/55 py-5"><p class="px-5 text-xs font-bold uppercase tracking-[.15em] text-slate-700">Banking & finance options</p><div class="mt-4 flex w-max ticker-track items-center gap-3" style="animation-direction:reverse" aria-label="Financing institutions"><template x-for="(item,index) in [...banks,...banks]" :key="index"><span class="rounded-xl border border-emerald-950/10 bg-white/75 px-5 py-3 text-sm font-bold text-slate-900" x-text="item"></span></template></div></div>
           </div>
         </div>
-        <p class="mt-6 text-right text-[11px] text-slate-500">Brand names are shown for information only. Products and finance are subject to availability, eligibility and partner terms.</p>
+        <p class="mt-6 text-right text-[11px] text-slate-700">Brand names are shown for information only. Products and finance are subject to availability, eligibility and partner terms.</p>
       </div>
     </section>
 
@@ -168,10 +196,10 @@
             <div class="mt-3 flex items-center rounded-xl border border-slate-300 bg-white px-4 focus-within:border-ember focus-within:ring-4 focus-within:ring-orange-100"><span class="text-xl font-bold text-slate-400">₹</span><input id="monthlyBill" type="number" min="500" max="200000" step="500" x-model.number="monthlyBill" class="w-full border-0 bg-transparent px-3 py-4 text-xl font-bold text-slate-950 outline-none focus:ring-0" aria-describedby="billHelp"><span class="text-sm text-slate-400">/ month</span></div>
             <p id="billHelp" class="mt-2 text-xs text-slate-500">Enter an approximate bill between ₹500 and ₹2,00,000.</p>
             <div class="mt-6 grid grid-cols-2 gap-3">
-              <div class="rounded-2xl bg-slate-50 p-4"><p class="text-xs font-semibold text-slate-500">Suggested system</p><p class="mt-2 font-display text-2xl font-extrabold text-slate-950"><span x-text="solarEstimate.systemKw"></span> kW</p></div>
-              <div class="rounded-2xl bg-slate-50 p-4"><p class="text-xs font-semibold text-slate-500">Estimated roof space</p><p class="mt-2 font-display text-2xl font-extrabold text-slate-950"><span x-text="solarEstimate.roofSqft"></span> sq. ft.</p></div>
-              <div class="rounded-2xl bg-yellow-50 p-4"><p class="text-xs font-semibold text-yellow-800">Indicative subsidy*</p><p class="mt-2 font-display text-2xl font-extrabold text-slate-950">₹<span x-text="solarEstimate.subsidy.toLocaleString('en-IN')"></span></p></div>
-              <div class="rounded-2xl bg-emerald-50 p-4"><p class="text-xs font-semibold text-emerald-800">Potential monthly saving</p><p class="mt-2 font-display text-2xl font-extrabold text-slate-950">₹<span x-text="solarEstimate.monthlySaving.toLocaleString('en-IN')"></span></p></div>
+              <div class="rounded-2xl bg-slate-50 p-3 sm:p-4"><p class="text-xs font-semibold text-slate-500">Suggested system</p><p class="mt-2 font-display text-[clamp(1rem,5vw,1.5rem)] font-extrabold tracking-tight text-slate-950"><span x-text="solarEstimate.systemKw"></span> kW</p></div>
+              <div class="rounded-2xl bg-slate-50 p-3 sm:p-4"><p class="text-xs font-semibold text-slate-500">Estimated roof space</p><p class="mt-2 font-display text-[clamp(1rem,5vw,1.5rem)] font-extrabold tracking-tight text-slate-950"><span x-text="solarEstimate.roofSqft"></span> sq. ft.</p></div>
+              <div class="rounded-2xl bg-yellow-50 p-3 sm:p-4"><p class="text-xs font-semibold text-yellow-800">Indicative subsidy*</p><p class="mt-2 font-display text-[clamp(1rem,5vw,1.5rem)] font-extrabold tracking-tight text-slate-950">₹<span x-text="solarEstimate.subsidy.toLocaleString('en-IN')"></span></p></div>
+              <div class="rounded-2xl bg-emerald-50 p-3 sm:p-4"><p class="text-xs font-semibold text-emerald-800">Potential monthly saving</p><p class="mt-2 font-display text-[clamp(1rem,5vw,1.5rem)] font-extrabold tracking-tight text-slate-950">₹<span x-text="solarEstimate.monthlySaving.toLocaleString('en-IN')"></span></p></div>
             </div>
             <p class="mt-4 text-xs text-slate-500">Estimated annual saving: <strong class="text-slate-700">₹<span x-text="solarEstimate.annualSaving.toLocaleString('en-IN')"></span></strong>. Subsidy ceiling shown for eligible residential systems only; subject to current scheme rules.</p>
             <a :href="calculatorWhatsApp" target="_blank" rel="noopener noreferrer" class="focus-ring mt-6 inline-flex w-full items-center justify-center rounded-xl bg-emerald-600 px-5 py-4 font-bold text-white transition hover:bg-emerald-700"><i class="fa-brands fa-whatsapp mr-2 text-lg"></i>WhatsApp my solar estimate</a>
@@ -187,7 +215,7 @@
           <template x-for="quote in quotations" :key="quote.file"><a :href="quote.file" download class="group flex items-center gap-4 rounded-2xl border border-slate-200 p-5 transition hover:border-ember/40 hover:shadow-soft"><span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-red-50 text-red-600"><i class="fa-solid fa-file-pdf text-xl"></i></span><span class="min-w-0 flex-1"><span class="block font-bold text-slate-900" x-text="quote.title"></span><span class="mt-1 block text-xs text-slate-500">Official quotation · PDF</span></span><i class="fa-solid fa-download text-slate-400 transition group-hover:text-ember"></i></a></template>
         </div>
         <div class="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          <template x-for="(photo,index) in gallery" :key="photo.src"><button @click="openLightbox(index)" class="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100 text-left focus-ring" :aria-label="'Preview ' + photo.alt"><img :src="photo.src" :alt="photo.alt" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105"><span class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-70"></span><span class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-left text-xs font-bold text-white"><span x-text="photo.label"></span><i class="fa-solid fa-up-right-and-down-left-from-center opacity-0 transition group-hover:opacity-100"></i></span></button></template>
+          <template x-for="(photo,index) in gallery" :key="photo.src"><button @click="openLightbox(index)" class="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100 text-left focus-ring" :aria-label="'Preview ' + photo.alt"><img :src="photo.src" :alt="photo.alt" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105"><span class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-70"></span><span class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-left text-xs font-bold text-white"><span x-text="photo.label"></span><i class="fa-solid fa-up-right-and-down-left-from-center opacity-0 transition group-hover:opacity-100"></i></span></button></template>
         </div>
         <div class="mt-12">
           <div class="mb-5 flex items-end justify-between gap-4">
@@ -211,11 +239,11 @@
       </div>
     </section>
 
-    <section class="bg-slate-950 py-16 text-white">
+    <section class="bg-mint-950 py-16 text-slate-950">
       <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[.85fr_1.15fr] lg:items-center lg:px-8">
-        <div><p class="text-sm font-extrabold uppercase tracking-[.18em] text-solar">Local team, local support</p><h2 class="mt-3 font-display text-3xl font-extrabold sm:text-4xl">Here when you need us.</h2><p class="mt-4 leading-7 text-slate-400">Connect with the right ANT4CE representative for your district.</p><div class="mt-7 flex flex-wrap gap-3"><a href="tel:8522005508" class="rounded-full bg-solar px-5 py-3 font-bold text-slate-950 hover:bg-yellow-300"><i class="fa-solid fa-phone mr-2"></i>Call our team</a><a href="mailto:ant4ce@gmail.com" class="rounded-full border border-white/20 px-5 py-3 font-bold text-white hover:bg-white/10"><i class="fa-solid fa-envelope mr-2"></i>Email us</a></div></div>
+        <div><p class="text-sm font-extrabold uppercase tracking-[.18em] text-emerald-950">Local team, local support</p><h2 class="mt-3 font-display text-3xl font-extrabold sm:text-4xl">Here when you need us.</h2><p class="mt-4 leading-7 text-slate-700">Connect with the right ANT4CE representative for your district.</p><div class="mt-7 flex flex-wrap gap-3"><a href="tel:8522005508" class="rounded-full bg-solar px-5 py-3 font-bold text-slate-950 hover:bg-yellow-300"><i class="fa-solid fa-phone mr-2"></i>Call our team</a><a href="mailto:ant4ce@gmail.com" class="rounded-full border border-emerald-950/30 px-5 py-3 font-bold text-emerald-950 hover:bg-white/30"><i class="fa-solid fa-envelope mr-2"></i>Email us</a></div></div>
         <div class="grid gap-3 sm:grid-cols-3">
-          <template x-for="district in districts" :key="district.name"><article class="rounded-2xl border border-white/10 bg-white/[.05] p-5"><div class="flex items-center gap-2 text-solar"><i class="fa-solid fa-location-dot"></i><h3 class="font-display font-extrabold text-white" x-text="district.name"></h3></div><template x-for="contact in district.contacts" :key="contact.phone"><a class="mt-4 flex items-start gap-2 text-sm text-slate-300 hover:text-white" :href="'tel:' + contact.phone"><i class="fa-solid fa-phone mt-1 text-xs text-slate-500"></i><span><span class="block font-semibold" x-text="contact.name"></span><span class="mt-0.5 block text-xs text-slate-400" x-text="contact.phoneDisplay"></span></span></a></template></article></template>
+          <template x-for="district in districts" :key="district.name"><article class="rounded-2xl border border-emerald-950/10 bg-white/60 p-5"><div class="flex items-center gap-2 text-emerald-900"><i class="fa-solid fa-location-dot"></i><h3 class="font-display font-extrabold text-slate-950" x-text="district.name"></h3></div><template x-for="contact in district.contacts" :key="contact.phone"><a class="mt-4 flex items-start gap-2 text-sm text-slate-700 hover:text-slate-950" :href="'tel:' + contact.phone"><i class="fa-solid fa-phone mt-1 text-xs text-emerald-800"></i><span><span class="block font-semibold" x-text="contact.name"></span><span class="mt-0.5 block text-xs text-slate-700" x-text="contact.phoneDisplay"></span></span></a></template></article></template>
         </div>
       </div>
     </section>
@@ -244,14 +272,14 @@
     </section>
   </main>
 
-  <footer class="bg-slate-950 text-white">
+  <footer class="bg-mint-950 text-slate-950">
     <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <div class="grid gap-8 border-b border-white/10 pb-9 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr]">
-        <div class="flex gap-3"><img src="assets/branding/Ant4ce_Logo.jpeg" alt="" class="h-12 w-12 rounded-xl object-cover"><div><p class="font-display font-extrabold">ANT <span class="text-red-500">4</span>CE CONSTRUCTIONS<br>& SOLAR SERVICES</p><p class="mt-2 max-w-xs text-sm leading-6 text-slate-400">Trusted construction and solar services for homes and businesses across Andhra Pradesh.</p></div></div>
-        <div><p class="font-bold">Company details</p><p class="mt-3 text-sm leading-6 text-slate-400">Proprietor: Charan Aditya Maruboina<br>GSTIN: <span class="font-semibold text-slate-200">37DVWPM6442J1ZP</span><br>Govt. Approved Solar Vendor</p></div>
-        <div><p class="font-bold">Get in touch</p><a href="tel:8522005508" class="mt-3 block text-sm text-slate-400 hover:text-white">+91 85220 05508</a><a href="mailto:ant4ce@gmail.com" class="mt-2 block text-sm text-slate-400 hover:text-white">ant4ce@gmail.com</a><a href="https://www.ant4ce.com" target="_blank" rel="noopener noreferrer" class="mt-2 block text-sm text-slate-400 hover:text-white">www.ant4ce.com</a></div>
+        <div class="flex gap-3"><img src="assets/branding/Ant4ce_Logo.jpeg" alt="" class="h-12 w-12 rounded-xl object-cover"><div><p class="font-display font-extrabold">ANT <span class="text-red-600">4</span>CE CONSTRUCTIONS<br>& SOLAR SERVICES</p><p class="mt-2 max-w-xs text-sm leading-6 text-slate-700">Trusted construction and solar services for homes and businesses across Andhra Pradesh.</p></div></div>
+        <div><p class="font-bold">Company details</p><p class="mt-3 text-sm leading-6 text-slate-700">Proprietor: Charan Aditya Maruboina<br>GSTIN: <span class="font-semibold text-slate-950">37DVWPM6442J1ZP</span><br>Govt. Approved Solar Vendor</p></div>
+        <div><p class="font-bold">Get in touch</p><a href="tel:8522005508" class="mt-3 block text-sm text-slate-700 hover:text-slate-950">+91 85220 05508</a><a href="mailto:ant4ce@gmail.com" class="mt-2 block text-sm text-slate-700 hover:text-slate-950">ant4ce@gmail.com</a><a href="https://www.ant4ce.com" target="_blank" rel="noopener noreferrer" class="mt-2 block text-sm text-slate-700 hover:text-slate-950">www.ant4ce.com</a></div>
       </div>
-      <div class="flex flex-col justify-between gap-3 pt-6 text-xs text-slate-500 sm:flex-row"><p>© <span x-text="new Date().getFullYear()"></span> ANT4CE Constructions & Solar Services. All rights reserved.</p><p>Scheme benefits, bank finance, product availability and warranties are subject to applicable terms and approvals. Estimates are indicative only.</p></div>
+      <div class="flex flex-col justify-between gap-3 border-t border-emerald-950/10 pt-6 text-xs text-slate-700 sm:flex-row"><p>© <span x-text="new Date().getFullYear()"></span> ANT4CE Constructions & Solar Services. All rights reserved.</p><p>Scheme benefits, bank finance, product availability and warranties are subject to applicable terms and approvals. Estimates are indicative only.</p></div>
     </div>
   </footer>
 
@@ -266,8 +294,78 @@
     function ant4ceSite() {
       return {
         monthlyBill: 6000,
-        brands: ['Vikram Solar', 'TATA Power Solar', 'Loom Solar', 'Waaree', 'Adani Solar', 'Luminous', 'Polycab', 'Sungrow', 'SMA'],
+        brands: ['Emmvee', 'Waaree', 'Adani Solar', 'Vikram Solar', 'Premier Energies', 'Polycab', 'SMA', 'Sungrow'],
         banks: ['SBI', 'Canara Bank', 'Bank of Baroda', 'Axis Bank', 'ICICI Bank', 'HDFC Bank', 'Other eligible lenders'],
+        services: [
+          {
+            number: '01 / HOUSE PLANNING',
+            title: '100% Vaastu House Planning',
+            actionHref: '#contact',
+            actionLabel: 'Discuss your house plan',
+            image: 'assets/images/New_27thOct/Plans/2D_Plans/2D_Plan.png',
+            imageAlt: 'Architectural 2D floor plan for Vaastu house planning',
+            icon: 'fa-solid fa-compass',
+            description: 'Plan a home around your site, family needs and Vaastu preferences, with thoughtful layouts from the start.',
+            points: ['Personalized house plans', 'Vaastu-oriented layout guidance', 'Floor plans for your site'],
+            samplePlan: 'assets/documents/New_27thOct/Plans/2D_Plans/West facing 2000 SFT floor plan (2).pdf'
+          },
+          {
+            number: '02 / LAND SURVEY',
+            title: 'Land Survey, Layout Marking & Planning',
+            actionHref: '#contact',
+            actionLabel: 'Request a site visit',
+            image: 'assets/images/New_27thOct/Plans/Layout_Marking/Layout_Marking.jpeg',
+            imageAlt: 'On-site land layout marking and survey work',
+            icon: 'fa-solid fa-map-location-dot',
+            description: 'Get your site measured and clearly marked to support informed plot and layout planning.',
+            points: ['Land survey works', 'On-site layout marking', 'Planning support']
+          },
+          {
+            number: '03 / SOLAR',
+            title: 'Solar Rooftop Installations & Services',
+            actionHref: '#calculator',
+            actionLabel: 'Calculate your solar plan',
+            secondaryAction: { href: '#contact', label: 'Discuss your project' },
+            image: 'assets/images/New_27thOct/Solar_Panels.jpeg',
+            imageAlt: 'Rooftop solar panels installed on a home',
+            icon: 'fa-solid fa-solar-panel',
+            description: 'Choose a rooftop solar solution matched to your property, energy use and utility connection.',
+            points: ['On-grid, off-grid & hybrid systems', 'Installation and service support', 'Panel and inverter options']
+          },
+          {
+            number: '04 / DESIGN',
+            title: 'Building Elevations & Interiors',
+            actionHref: '#contact',
+            actionLabel: 'Discuss your design',
+            image: 'assets/images/New_27thOct/Plans/Elevation_Design/WhatsApp Image 2026-10-27 at 10.39.21 AM.jpeg',
+            imageAlt: 'Architectural residential elevation design',
+            icon: 'fa-solid fa-house-chimney',
+            description: 'Bring your vision together with coordinated exterior elevation concepts and interior design services.',
+            points: ['Residential building elevations', 'Interior design planning', 'Design concepts for your space']
+          },
+          {
+            number: '05 / REAL ESTATE',
+            title: 'Real Estate Works',
+            actionHref: '#contact',
+            actionLabel: 'Enquire about property',
+            image: 'assets/images/New_27thOct/realestate_image.webp',
+            imageAlt: 'Real estate property image',
+            icon: 'fa-solid fa-city',
+            description: 'Connect with our team for real estate related requirements and property project enquiries.',
+            points: ['Property-related enquiries', 'Project and site discussions', 'Local team assistance']
+          },
+          {
+            number: '06 / ELECTRIC MOBILITY',
+            title: 'EV Bike Sales',
+            actionHref: '#contact',
+            actionLabel: 'Ask about RYOTO bikes',
+            image: 'assets/images/New_27thOct/EV_Bike/Ryoto_Bikes.jpeg',
+            imageAlt: 'RYOTO Electrix electric two-wheelers',
+            icon: 'fa-solid fa-motorcycle',
+            description: 'Explore electric two-wheelers from RYOTO Electrix through ANT4CE, an authorized distributor.',
+            points: ['RYOTO Electrix distributor', 'Electric bike sales enquiries', 'Product and dealership information']
+          }
+        ],
         quotations: [
           { title: 'Final Quotation · 3 kW', file: 'assets/documents/Final Quotation - 3kW.pdf' },
           { title: 'Final Quotation · 5 kW', file: 'assets/documents/Final Quotation - 5kW.pdf' },
@@ -305,7 +403,9 @@
         activePhotoIndex: 0,
         get solarEstimate() {
           const bill = Math.min(200000, Math.max(500, Number(this.monthlyBill) || 500));
-          const systemKw = Math.max(1, Math.ceil(bill / 960));
+          const systemKw = bill <= 1000
+            ? (bill <= 500 ? 2 : 3)
+            : Math.max(1, Math.ceil(bill / 960));
           const subsidy = Math.min(78000, Math.min(systemKw, 2) * 30000 + (systemKw > 2 ? Math.min(systemKw - 2, 1) * 18000 : 0));
           const monthlySaving = Math.min(Math.round(bill * 0.9), Math.round(systemKw * 120 * 8 * 0.9));
           return { systemKw, roofSqft: systemKw * 100, subsidy, monthlySaving, annualSaving: monthlySaving * 12 };
