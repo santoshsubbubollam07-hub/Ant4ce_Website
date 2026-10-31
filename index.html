@@ -66,12 +66,34 @@
       background-size: 30px 30px;
     }
     .focus-ring:focus-visible { outline: 3px solid #eab308; outline-offset: 3px; }
+    .brand-watermark {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      display: grid;
+      place-items: center;
+      pointer-events: none;
+      opacity: .045;
+      mix-blend-mode: multiply;
+    }
+    .brand-watermark img {
+      width: clamp(20rem, 48vw, 42rem);
+      max-height: 72vh;
+      height: auto;
+    }
+    @media (max-width: 640px) {
+      .brand-watermark img {
+        width: min(78vw, 22rem);
+        max-height: 48vh;
+      }
+    }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
     }
   </style>
 </head>
 <body class="bg-white text-slate-900 antialiased" x-data="ant4ceSite()">
+  <div class="brand-watermark" aria-hidden="true"><img src="assets/branding/Ant4ce_Logo.jpeg" alt=""></div>
   <div class="bg-slate-950 text-white">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-2 text-center text-xs sm:flex-row sm:text-left">
       <p class="font-semibold tracking-wide"><i class="fa-solid fa-certificate mr-2 text-solar"></i>Govt. Approved Solar Vendor <span class="text-slate-300">· APCPDCL · APSPDCL · APEPDCL · MNRE</span></p>
